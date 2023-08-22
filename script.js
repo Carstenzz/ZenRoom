@@ -1,6 +1,10 @@
 //not perfect,,
 //if it works, it works
 
+
+document.querySelector("header").style.display = "none"
+document.querySelector("main").style.display = "block"
+
 const background = document.querySelector(".background")
 const homeAnim = document.querySelectorAll(".homeAnim")
 const placeholder = document.querySelector(".placeholder")
@@ -37,7 +41,6 @@ let appear = [false, false]
 //-------------------------------------------------------
 
 
-document.querySelector("header").style.display = "none"
 
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -76,7 +79,7 @@ window.onscroll = function (e) {
 
 
 ambience.volume = 0.3
-ambience.play()
+
 
 
 //-------------------------------------------------------
