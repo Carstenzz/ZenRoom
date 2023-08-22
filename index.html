@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenRoom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header style="height:100vh; display: grid; place-content: center; font-size: 3rem; text-align: center;">
+        <h1 style="display: flex;">ZenR
+            <span class="material-symbols-outlined" style="font-size: 100px !important; transform: translatey(15%);">
+            all_inclusive
+            </span>
+            m
+        </h1>
+        <p>sound on</p>
+        <br><br>
+        <p>loading....</p>
+    </header>
+    <main>
+        <audio loop src="assets/healing-sounds-124056 (cut).mp3" class="ambience"></audio>
+        <section class="home">
+            <div class="homeText">
+                <h1>
+                    <span class="homeAnim">R</span>
+                    <span class="homeAnim">e</span>
+                    <span class="homeAnim">l</span>
+                    <span class="homeAnim">a</span>
+                    <span class="homeAnim">x</span>
+                    <span class="homeAnim">,</span>
+                </h1>
+                <h1>
+                    <span class="homeAnim">M</span>
+                    <span class="homeAnim">e</span>
+                    <span class="homeAnim">d</span>
+                    <span class="homeAnim">i</span>
+                    <span class="homeAnim">t</span>
+                    <span class="homeAnim">a</span>
+                    <span class="homeAnim">t</span>
+                    <span class="homeAnim">e</span>
+                </h1>
+                <p>
+                    <span class="homeAnim">Slow</span>
+                    <span class="homeAnim">down</span>
+                    <span class="homeAnim">and</span>
+                    <span class="homeAnim">take</span>
+                    <span class="homeAnim">a</span>
+                    <span class="homeAnim">step</span>
+                    <span class="homeAnim">back</span>
+                </p>
+            </div>
+            <div class="placeholder"></div>
+        </section>
+        <section class="nature">
+            <h1 class="natureTitle disappear">Feel The Athmosphere</h1>
+            <div class="container">
+                <button class="outer disappear">
+                    <div class="inner">
+                        <div class="imgContainer forest"></div>
+                    </div>
+                    <img src="assets/vecteezy_lines-in-circle-form-spiral-vector-illustration_6399079.svg" alt="" width="100%" class="outerimg">
+                </button>
+                <button class="outer disappear">
+                    <div class="inner">
+                        <div class="imgContainer sea"></div>
+                    </div>
+                    <img src="assets/vecteezy_lines-in-circle-form-spiral-vector-illustration_6399079.svg" alt="" width="100%" class="outerimg">
+                </button>
+                <button class="outer disappear">
+                    <div class="inner">
+                        <div class="imgContainer firecamp"></div>
+                    </div>
+                    <img src="assets/vecteezy_lines-in-circle-form-spiral-vector-illustration_6399079.svg" alt="" width="100%" class="outerimg">
+                </button>
+            </div>
+            <audio loop src="assets/birds-singing-calm-river-nature-ambient-sound-127411.mp3" class="natureAudio"></audio>
+            <audio loop src="assets/sandy-beach-calm-waves-water-nature-sounds-8052.mp3" class="natureAudio"></audio>
+            <audio loop src="assets/crackling-fireplace-nature-sounds-8012.mp3" class="natureAudio"></audio>
+        </section>
+        <section class="meditate">
+            <div class="meditateText">
+                <h1>
+                    <span class="meditateAnim">T</span>
+                    <span class="meditateAnim">r</span>
+                    <span class="meditateAnim">y</span>
+                    <span class="meditateAnim">&nbsp</span>
+                    <span class="meditateAnim">T</span>
+                    <span class="meditateAnim">o</span>
+                </h1>
+                <h1>
+                    <span class="meditateAnim">M</span>
+                    <span class="meditateAnim">e</span>
+                    <span class="meditateAnim">d</span>
+                    <span class="meditateAnim">i</span>
+                    <span class="meditateAnim">t</span>
+                    <span class="meditateAnim">a</span>
+                    <span class="meditateAnim">t</span>
+                    <span class="meditateAnim">e</span>
+                </h1>
+                <p>
+                    <span class="meditateAnim">Take</span>
+                    <span class="meditateAnim">a</span>
+                    <span class="meditateAnim">break</span>
+                    <span class="meditateAnim">and</span>
+                    <span class="meditateAnim">enjoy</span>
+                    <span class="meditateAnim">the</span>
+                    <span class="meditateAnim">moment</span>
+                </p>
+            </div>
+            <button class="meditateButton disappear" onclick="startMeditate()">
+            
+                <div class="buttonCircle"></div>
+                <div class="buttonCircle"></div>
+                <div class="buttonCircle"></div>
+                <div class="buttonCircle"></div>
+                <div class="circleCenter">
+                    <h1 class="buttonText">Press<br>Me</h1>
+                    <h1 class="buttonText">Stop</h1>
+                </div>
+            </button>
+            <audio src="assets/windchime1-7065.mp3" class="meditateAudio"></audio>
+            <audio src="assets/bells-1-72261.mp3" class="meditateAudio"></audio>
+        </section>
+    </main>
+    <footer>
+        <!-- nothing to see here -->
+    </footer>
+    <div class="background"></div>
+</body>
+</html>

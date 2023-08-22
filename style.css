@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sulphur Point', sans-serif;
+}
+body{
+    background-color: white;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.homeText{
+    z-index: 1;
+    padding: 3rem;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.6) 60%, rgba(255, 255, 255, 0) 70%);
+
+}
+.homeText h1 {
+    font-size: 3rem;
+    line-height: 90%;
+    display: flex;
+}
+
+.placeholder{
+    height: 70vh;
+    width: 80vw;
+    max-width: 400px;
+    background-image: url(assets/meditate-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 2s ease-in-out;
+}
+.nature {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.natureTitle{
+    transition: 1s;
+    border: none;
+    position: absolute;
+    top: 5vh;
+    font-size: 2rem;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.outer{
+    display: grid;
+    place-content: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    transition: 1s;
+    border-radius: 50%;
+    margin: 0 1rem;
+    transition: 1s;
+}
+.inner{
+    mask-image: radial-gradient(circle, black 40%, transparent 65%);
+    mask-size: cover;
+    -webkit-mask-image: radial-gradient(circle, black 40%, transparent 65%);
+    -webkit-mask-size: cover;
+}
+.outerimg{
+    position: absolute;
+    transform: translate(-2%, -1%);
+    transition: 1s linear;
+    filter: contrast(0%);
+    border-radius: 50%;
+}
+.imgContainer{
+    width: 13rem;
+    height: 13rem;
+    background-size: cover;
+    transition: 1s;
+}
+.sea{
+    background-image: url(assets/sea.jpg);
+}
+.forest{
+    background-image: url(assets/forest.jpg);
+}
+.firecamp{
+    background-image: url(assets/camping.jpg);
+    background-position: center;
+}
+
+
+.meditate{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.meditateButton{
+    height: 15rem;
+    width: 15rem;
+    transition: 1s;
+    position: absolute;
+    right: 13vw;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: grid;
+    place-items: center;
+    background: transparent;
+    border: none;
+}
+.pressed{
+    transform : translate(50%, -50%) !important;
+    top : 50% !important;
+    right : 50% !important;
+}
+.meditateText{
+    position: absolute;
+    left: 13vw;
+}
+.meditateText h1{
+    font-size: 3rem;
+    line-height: 90%;
+    display: flex;
+}
+.buttonCircle{
+    scale: 0;
+    position: absolute;
+    width: 35rem;
+    height: 35rem;
+    transition: 2.5s cubic-bezier(.5,0,.5,1);
+    z-index: -10;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(190,190,190,0) 65%, rgba(190,190,190,1) 67%, rgba(190,190,190,0) 71%);
+}
+.buttonCircle:nth-child(2){
+    width: 30rem;
+    height: 30rem;
+}
+.buttonCircle:nth-child(3){
+    width: 25rem;
+    height: 25rem;
+}
+.buttonCircle:nth-child(4){
+    width: 20rem;
+    height: 20rem;
+}
+.circleCenter{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    transition: 1s;
+    background: radial-gradient(circle, rgb(234, 234, 234) 40%, lightgray 65%);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.buttonText {
+    position: absolute;
+    transition: 1s;
+}
+
+
+.background{
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    height: 250vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    background-image: url(assets/sun-tornado\ \(5\).svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.disappear{
+    opacity: 0;
+    filter: blur(1rem);
+}
+
+
+@media (max-width: 768px) {
+    .placeholder{
+        position: absolute;
+    }
+    html{
+        font-size: 12px;
+    }
+    .natureTitle{
+        top: 30vh !important;
+    }
+    .container{
+       gap: 2rem;
+    }
+    .outer{
+        height: 15rem;
+        width: 15rem;
+    }
+    .meditateText{
+        left: auto;
+        top: 20vh;
+    }
+    .meditateButton{
+        right: 50vw;
+        transform: translate(50%, -50%);
+        top: 60vh;
+    }
+}
+@media (width <= 660px) {
+    .natureTitle{
+        top: 5vh !important;
+    }
+}
+@media (width <= 1151.9px) {
+    .natureTitle{
+        top: auto;
+    }
+}
